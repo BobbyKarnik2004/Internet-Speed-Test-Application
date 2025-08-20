@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .error-container { max-width: 800px; margin: 0 auto; }
+        .error-box { border: 1px solid #ff4444; padding: 20px; background: #ffeeee; }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-box">
+            <h1>Application Error</h1>
+            <p th:text="${error} ?: 'An unexpected error occurred'"></p>
+            <a href="/">Return to Application</a>
+        </div>
+    </div>
+</body>
+</html>
